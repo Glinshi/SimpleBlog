@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+a, a:visited, a:active{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+body{
+    font-family: 'open sans';
+    font-size: 18px;
+   
+    
+   
+}
+
+.header{
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+nav{
+    background:#3f668d;
+    color:white;
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+    align-items: center; 
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100px;
+
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+    list-style: none;
+    justify-content: flex-end;
+    max-width: 55ch;
+    gap: 20px;
+
+
+}
+
+.li-logo a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+
+}
+
+.li-logo i{
+    font-size: 250%;
+}
+
+
+main{
+    margin-top: 100px;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: row; /* Flex-items in een kolom plaatsen */
+    justify-content: center; /* Centreer inhoud verticaal binnen main */
+    align-items: center; /* Centreer inhoud horizontaal binnen main */
+    padding: 20px; /* Voor ruimte binnen het main element */
+
+    
+    
+   
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40;
+    margin: 0 auto;
+    width: calc(100%);
+    justify-content: center;
+ 
+
+     
+}
+
+
+
+h1{
+    font-size: 250%;
+
+    
+
+}
+
+h2{
+    font-size: 200%;
+   
+ 
+
+}
+
+h3{
+    font-size: 200%;
+
+
+}
+
+h1,h2,h3{
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    
+}
+
+article{
+    
+    width: 40vw ;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation-name: popup;
+    animation-duration: 0.8s;
+    margin-top: 100px;
+
+    
+
+}
+
+section{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+ 
+}
+
+img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+   
+}
+
+.video{
+    width: 45vw ;
+
+}
+
+li{
+    list-style-position: inside;
+
+}
+
+.card{
+    
+    list-style: none;
+    width: 350px;
+    aspect-ratio: 1/1.6;
+    box-shadow: 0px 0px 5px rgb(0,0,0,0.3); 
+    animation-name: popup;
+    animation-duration: 0.8s;
+ 
+
+
+}
+
+.card header{
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    
+  
+}
+
+
+
+.header--bloesems{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(251, 124, 227, 0.3), #3f668d), url(/Image/pexels-grigoriy-3808567-16386075.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.header2--bloesems{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(251, 124, 227, 0.3), #3f668d), url(/Image/pexels-olha-ruskykh-7166020.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.header--zonnebloemen{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(251, 124, 227, 0.3), #3f668d), url(/Image/pexels-brett-sayles-1322185\ \(1\).jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+.header--waterlelie{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(251, 124, 227, 0.3), #3f668d), url(/Image/pexels-wr-heustis-310270240-14098192.jpg);
+    background-position:center;
+    background-size: cover;
+}
+
+
+
+
+form h2{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 180%;
+}
+
+.card section{
+    height: 35% ;
+    padding: 20px;
+    border-bottom: 0.5px solid rgba(214, 214, 214, 1);
+    border-left: 0.5px solid rgba(214, 214, 214, 1);
+    border-right: 0.5px solid rgba(214, 214, 214, 1);
+   
+
+}
+
+.card footer{
+    height: 10%;
+    padding-left: 20px;
+    display: flex;
+    border-bottom: 0.5px solid rgba(214, 214, 214, 1);
+    border-left: 0.5px solid rgba(214, 214, 214, 1);
+    border-right: 0.5px solid rgba(214, 214, 214, 1);
+
+    
+}
+
+.card footer a{
+    color:blue;
+}
+
+p{
+    max-width: 55ch;
+    margin: 0 auto;
+    
+}
+
+
+article ul, article ol{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 55ch;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input textarea{
+    font-size: 100%;
+    font-family: 'Open-Sans';
+
+}
+
+input[type = "submit"]{
+    background: black;
+    border: none;
+    width: 200px;
+    height: 20px;
+    color: white;
+
+
+}
+
+input[type = "submit"]:hover{
+    cursor: pointer;
+
+}    
+textarea{
+
+height: 200px;
+resize: none;
+}
+.footer{
+    height: 100px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer p:nth-of-type(2){
+    display: none;
+
+}
+
+.footer p{
+    margin: 0;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+
+    article {
+        width: 100%;
+    }
+    nav{
+        padding:5px;
+    }
+    .cards{
+        padding:20px 0;
+
+    }
+}
+
+@keyframes popup {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+
+    
+}
